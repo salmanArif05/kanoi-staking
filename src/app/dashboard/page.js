@@ -260,7 +260,10 @@ export default function Page() {
 										onClick={() => setStakeIsCollapse(!stakeIsCollapse)}
 										className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] disabled:bg-grey w-full md:w-[150px]"
 										type="button">
-										<div className="flex items-center justify-center">MANAGE</div>
+										<div className="flex items-center justify-center gap-2">
+											<div>MANAGE</div>
+											{!stakeIsCollapse ? <iconify-icon icon="vaadin:arrow-down" width="14" height="14"></iconify-icon> : <iconify-icon icon="vaadin:arrow-up" width="16" height="16"></iconify-icon>}
+										</div>
 									</button>
 								</div>
 							</div>
@@ -285,7 +288,7 @@ export default function Page() {
 
 											<div className="flex gap-2 mb-4">
 												<input type="number" className="border-2 w-3/5 border-grey-200 focus:outline-none rounded-md p-2" />
-												<button className="rounded border-2 w-2/5 uppercase p-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a]  disabled:bg-grey">
+												<button className="rounded border-2 w-2/5 uppercase p-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#fff] text-[#e8833a] border-[#e8833a] hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] hover:text-white  disabled:bg-grey">
 													WITHDRAW
 												</button>
 											</div>
