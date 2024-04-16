@@ -1,0 +1,59 @@
+.home-nav {
+	background-image: url("../../public/MainSectionBackgroundDesktop.png");
+}
+
+.nav-tabs .nav-link {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 700;
+	color: #7f8699;
+}
+
+.nav-tabs .nav-link:hover {
+	border-color: transparent !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	border: 0;
+	color: #0043e5 !important;
+	background-color: rgba(0, 67, 229, 0.1) !important;
+	border-radius: 8px;
+}
+
+/* banner */
+
+.banner-section {
+	background-image: url("../../public/MainSectionBackgroundDesktop.png");
+	padding-bottom: 50px;
+	margin-bottom: 100px;
+}
+
+/* faqs */
+
+.accordion-button {
+	color: #000;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: transparent !important;
+}
+
+.accordion-button:focus {
+	box-shadow: none !important;
+}
+
+.dashboard-bg,
+.pools-bg,
+.market-bg {
+	background-image: url("../../public/MainSectionBackgroundDesktop.png");
+}
+
+@media screen and (max-width: 768px) {
+	.sm-nav-tabs {
+		position: fixed;
+		bottom: 5px;
+	}
+}
