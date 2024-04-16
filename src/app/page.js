@@ -2,6 +2,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/nav";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	const stakeWays = [
@@ -9,35 +10,35 @@ export default function Home() {
 			id: "01",
 			title: "$KANOI POOL",
 			description:
-				"Rewards vary based on the amount of tokens locked and the lockup duration. When $KANOI tokens are locked in the $SAISEN staking, the reward amount in $SEISEN is calculated by converting $KANOI to the prevailing market value of $SAISEN. Staking incentives may encompass exclusive NFTs and game items.",
-			img: "/apeCoin.png",
+				"Rewards vary based on the amount of tokens locked and the lockup duration. When $KANOI tokens are locked in the $SAISEN staking, the reward amount in $SAISEN is calculated by converting $KANOI to the prevailing market value of $SAISEN. Staking incentives may encompass exclusive NFTs and game items.",
+			img: "/KanoiCoin.png",
 		},
 		{
 			id: "02",
 			title: "$SAISEN POOL",
 			description:
-				"Locking $SAISEN tokens in the $SEISEN staking pool enables users to earn additional $SEISEN rewards. The amount of rewards received in contigent upon the quantity of tokens locked and the duration of the lockup period. Staking incentives may encompass exclusive NFTs, in game items, and other perks.",
-			img: "/apeCoin.png",
+				"Locking $SAISEN tokens in the $SAISEN staking pool enables users to earn additional $SAISEN rewards. The amount of rewards received in contigent upon the quantity of tokens locked and the duration of the lockup period. Staking incentives may encompass exclusive NFTs, in game items, and other perks.",
+			img: "/KanoiCoin.png",
 		},
 		// {
 		// 	id: "03",
 		// 	title: "MUTANT (MAYC) POOL",
-		// 	description: "The MAYC pool lets you stake up to 2,042 $APE for each MAYC you own. The total staking pool for Mutants tops out at 19,060,000 $APE for Year 1.",
-		// 	img: "/apeCoin.png",
+		// 	description: "The MAYC pool lets you stake up to 2,042 $Kanoi for each MAYC you own. The total staking pool for Mutants tops out at 19,060,000 $Kanoi for Year 1.",
+		// 	img: "/KanoiCoin.png",
 		// },
 		// {
 		// 	id: "04",
 		// 	title: "PAIRED (BAKC) POOL",
 		// 	description:
-		// 		"The Paired pool works differently. A Dog (BAKC) cannot be staked alone and must be paired with a Bored Ape or a Mutant. The total staking pool for a BAKC pairing is 3,835,000 $APE for Year 1.",
-		// 	img: "/apeCoin.png",
+		// 		"The Paired pool works differently. A Dog (BAKC) cannot be staked alone and must be paired with a Bored Kanoi or a Mutant. The total staking pool for a BAKC pairing is 3,835,000 $Kanoi for Year 1.",
+		// 	img: "/KanoiCoin.png",
 		// },
 	];
 	const faqs = [
 		{
 			question: "WHAT IS KANOI?",
-			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (ApeDAO) and was created as a way for $APE, BAYC, MAYC, and BAKC holders to earn rewards through staking. $APE can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.
-      The ApeStake.io protocol was proposed in AIPs 21 and 22 and subsequently approved by the community on May 4, 2022. Following approval, the Ape Foundation enlisted Horizen Labs to provide a platform for the staking protocol according to the specifications set forth in the AIPs.
+			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (kANOIDAO) and was created as a way for $Kanoi, BAYC, MAYC, and BAKC holders to earn rewards through staking. $Kanoi can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.
+      The KanoiStake.io protocol was proposed in AIPs 21 and 22 and subsequently approved by the community on May 4, 2022. Following approval, the Kanoi Foundation enlisted Horizen Labs to provide a platform for the staking protocol according to the specifications set forth in the AIPs.
 
       To help clarify terminology, the AIPs provided definitions for some important terms:
 
@@ -59,19 +60,19 @@ export default function Home() {
 		},
 		{
 			question: "WHAT BROWSERS AND DEVICES SUPPORT KANOI?",
-			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (ApeDAO) and was created as a way for $APE, BAYC, MAYC, and BAKC holders to earn rewards through staking. $APE can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
+			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (kANOIDAO) and was created as a way for $Kanoi, BAYC, MAYC, and BAKC holders to earn rewards through staking. $Kanoi can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
 		},
 		{
 			question: "WHAT BROWSERS AND DEVICES SUPPORT KANOI?",
-			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (ApeDAO) and was created as a way for $APE, BAYC, MAYC, and BAKC holders to earn rewards through staking. $APE can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
+			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (kANOIDAO) and was created as a way for $Kanoi, BAYC, MAYC, and BAKC holders to earn rewards through staking. $Kanoi can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
 		},
 		{
 			question: "WHAT BROWSERS AND DEVICES SUPPORT KANOI?",
-			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (ApeDAO) and was created as a way for $APE, BAYC, MAYC, and BAKC holders to earn rewards through staking. $APE can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
+			answer: `KANOI is the official staking protocol for KANOI established by the KANOI DAO (kANOIDAO) and was created as a way for $Kanoi, BAYC, MAYC, and BAKC holders to earn rewards through staking. $Kanoi can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
 		},
 		{
 			question: "WHAT BROWSERS AND DEVICES SUPPORT KANOI?",
-			answer: `ApeStake.io is the official staking protocol for KANOI established by the KANOI DAO (ApeDAO) and was created as a way for $APE, BAYC, MAYC, and BAKC holders to earn rewards through staking. $APE can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
+			answer: `KanoiStake.io is the official staking protocol for KANOI established by the KANOI DAO (kANOIDAO) and was created as a way for $Kanoi, BAYC, MAYC, and BAKC holders to earn rewards through staking. $Kanoi can be staked by itself or in conjunction with a BAYC, MAYC, or BAKC in one of the four staking pools, with each pool offering different levels of rewards.`,
 		},
 	];
 	return (
@@ -82,13 +83,13 @@ export default function Home() {
 					<div className="row !items-center">
 						<div className="col-md-6">
 							<div className="banner-image">
-								<Image src="/ape-banner.png" alt="Banner" width={500} height={500} />
+								<Image src="/Kanoi-banner.png" alt="Banner" width={500} height={500} />
 							</div>
 						</div>
 						<div className="col-md-5">
 							<div className="banner-text">
 								<h1 className="text-black lg:text-5xl sm:text-2xl font-bold">STAKE YOUR $KANOI/$SAISEN AND EARN REWARDS</h1>
-								<p className="lg:max-w-[488px] text-[#293740]">Do you have $KANOI or $SAISEN circulating in the KANOI TCG ecosystem? Don't dawdle:ern rewards by staking your assets.</p>
+								<p className="lg:max-w-[488px] text-[#293740]">Do you have $KANOI or $SAISEN circulating in the KANOI TCG ecosystem? Don't dawdle; earn rewards by staking your assets.</p>
 							</div>
 						</div>
 					</div>
@@ -108,19 +109,19 @@ export default function Home() {
 									</div>
 									<p className="mb-8 text-grey-light text-base leading-5 w-75">{way.description}</p>
 									<div>
-										<div className="inline-block ">
+										<div className="inline-block rounded-full">
 											<picture>
-												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} className="rounded-full border-2" alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
-										<div className="inline-block -translate-x-[1.5rem]">
+										<div className="inline-block rounded-full -translate-x-[1.5rem]">
 											<picture>
-												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} className="rounded-full border-2" alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
-										<div className="inline-block -translate-x-[3rem]">
+										<div className="inline-block rounded-full -translate-x-[3rem]">
 											<picture>
-												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} className="rounded-full border-2" alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
 									</div>
@@ -129,7 +130,9 @@ export default function Home() {
 						))}
 					</div>
 					<div className="text-center">
-						<button className="btn btn-primary text-uppercase !bg-[#e8833a] !font-bold !px-7 py-2">Start Staking</button>
+						<Link href="/dashboard" className="btn btn-primary text-uppercase !bg-[#e8833a] !font-bold !px-7 py-2">
+							Start Staking
+						</Link>
 					</div>
 				</div>
 			</section>

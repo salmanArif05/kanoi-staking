@@ -1,7 +1,7 @@
 export default function Layout({ children }) {
 	return (
 		<>
-			<div className="flex h-screen flex-col md:overflow-hidden">{children}</div>
+			<div className="flex md:h-screen flex-col md:overflow-x-hidden">{children}</div>
 		</>
 	);
 }
