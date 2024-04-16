@@ -87,7 +87,7 @@ export default function Home() {
 						</div>
 						<div className="col-md-5">
 							<div className="banner-text">
-								<h1 className="text-black text-5xl font-bold">STAKE YOUR $KANOI/$SAISEN AND EARN REWARDS</h1>
+								<h1 className="text-black lg:text-5xl sm:text-2xl font-bold">STAKE YOUR $KANOI/$SAISEN AND EARN REWARDS</h1>
 								<p className="lg:max-w-[488px] text-[#293740]">Do you have $KANOI or $SAISEN circulating in the KANOI TCG ecosystem? Don't dawdle:ern rewards by staking your assets.</p>
 							</div>
 						</div>

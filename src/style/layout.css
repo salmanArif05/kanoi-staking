@@ -61,9 +61,12 @@
 	background-image: url("../../public/MainSectionBackgroundDesktop.png");
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.sm-nav-tabs {
 		position: fixed;
-		bottom: 5px;
+		bottom: 20px;
+		left: 40%;
+		transform: translateX(-40%);
+		z-index: 11;
 	}
 }

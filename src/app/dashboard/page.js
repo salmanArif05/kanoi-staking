@@ -201,7 +201,7 @@ export default function Page() {
 							</div>
 						</div>
 						<div className="p-4 mb-4 bg-white border rounded border-grey-200">
-							<div className="flex flex-row md:flex-nowrap items-start md:items-center ">
+							<div className="flex flex-row !flex-wrap md:flex-nowrap items-start md:items-center">
 								<div className="md:w-3/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
 									<div className="flex flex-col items-start xl:flex-row xl:items-center">
 										<p className="text-xs uppercase md:hidden text-grey-light">asset</p>
@@ -291,12 +291,12 @@ export default function Page() {
 					</div>
 
 					<div className="stake-amount mb-4">
-						<input type="number" className="w-full border-2 border-grey-200 rounded-md p-2" placeholder="Enter amount" />
+						<input type="number" className="w-full border-2 border-grey-200 focus:outline-none rounded-md p-2" placeholder="Enter amount" />
 					</div>
 
 					<div className="text-black font-normal mb-2">Duration</div>
 
-					<div className="flex flex-row justify-start mb-4">
+					<div className="flex flex-row justify-start flex-wrap gap-2 mb-4">
 						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
 							<div>
 								<button
