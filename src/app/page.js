@@ -11,27 +11,27 @@ export default function Home() {
 			title: "$KANOI POOL",
 			description:
 				"Rewards vary based on the amount of tokens locked and the lockup duration. When $KANOI tokens are locked in the $SAISEN staking, the reward amount in $SAISEN is calculated by converting $KANOI to the prevailing market value of $SAISEN. Staking incentives may encompass exclusive NFTs and game items.",
-			img: "/KanoiCoin.png",
+			img: "/apeCoin.png",
 		},
 		{
 			id: "02",
 			title: "$SAISEN POOL",
 			description:
 				"Locking $SAISEN tokens in the $SAISEN staking pool enables users to earn additional $SAISEN rewards. The amount of rewards received in contigent upon the quantity of tokens locked and the duration of the lockup period. Staking incentives may encompass exclusive NFTs, in game items, and other perks.",
-			img: "/KanoiCoin.png",
+			img: "/apeCoin.png",
 		},
 		// {
 		// 	id: "03",
 		// 	title: "MUTANT (MAYC) POOL",
 		// 	description: "The MAYC pool lets you stake up to 2,042 $Kanoi for each MAYC you own. The total staking pool for Mutants tops out at 19,060,000 $Kanoi for Year 1.",
-		// 	img: "/KanoiCoin.png",
+		// 	img: "/apeCoin.png",
 		// },
 		// {
 		// 	id: "04",
 		// 	title: "PAIRED (BAKC) POOL",
 		// 	description:
 		// 		"The Paired pool works differently. A Dog (BAKC) cannot be staked alone and must be paired with a Bored Kanoi or a Mutant. The total staking pool for a BAKC pairing is 3,835,000 $Kanoi for Year 1.",
-		// 	img: "/KanoiCoin.png",
+		// 	img: "/apeCoin.png",
 		// },
 	];
 	const faqs = [
@@ -83,7 +83,7 @@ export default function Home() {
 					<div className="row !items-center">
 						<div className="col-md-6">
 							<div className="banner-image">
-								<Image src="/Kanoi-banner.png" alt="Banner" width={500} height={500} />
+								<Image src="/ape-banner.png" alt="Banner" width={500} height={500} />
 							</div>
 						</div>
 						<div className="col-md-5">
