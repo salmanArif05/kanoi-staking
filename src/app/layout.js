@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Kanoi Staking",
-	description: " ",
+	description: "Staking Platform ",
 };
 
 export default function RootLayout({ children }) {
