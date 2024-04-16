@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Footer from "@/components/footer";
 import Navbar from "@/components/nav";
 import Image from "next/image";
