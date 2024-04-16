@@ -262,7 +262,7 @@ export default function Page() {
 										type="button">
 										<div className="flex items-center justify-center gap-2">
 											<div>MANAGE</div>
-											{!stakeIsCollapse ? <iconify-icon icon="vaadin:arrow-down" width="14" height="14"></iconify-icon> : <iconify-icon icon="vaadin:arrow-up" width="16" height="16"></iconify-icon>}
+											{!stakeIsCollapse ? <iconify-icon icon="vaadin:arrow-down" width="14" height="14"></iconify-icon> : <iconify-icon icon="vaadin:arrow-up" width="14" height="14"></iconify-icon>}
 										</div>
 									</button>
 								</div>
