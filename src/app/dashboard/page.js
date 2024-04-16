@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Page() {
@@ -231,7 +232,7 @@ export default function Page() {
 												height: "147px",
 												width: "147px",
 											}}>
-											<img src="/apecoin-pool-image.png" className="h-[147px] w-[147px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="147" width="147" />
+											<Image src="/apecoin-pool-image.png" className="h-[147px] w-[147px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="147" width="147" />
 										</span>
 									</div>
 								</div>

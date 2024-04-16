@@ -111,17 +111,17 @@ export default function Home() {
 									<div>
 										<div class="inline-block ">
 											<picture>
-												<img src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
 										<div class="inline-block -translate-x-[1.5rem]">
 											<picture>
-												<img src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
 										<div class="inline-block -translate-x-[3rem]">
 											<picture>
-												<img src={way.img} alt="Coin/NFT icon" width="60" height="60" />
+												<Image src={way.img} alt="Coin/NFT icon" width="60" height="60" />
 											</picture>
 										</div>
 									</div>

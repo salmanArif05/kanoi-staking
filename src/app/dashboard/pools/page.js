@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
 	return (
 		<div className="pools-bg">
@@ -114,7 +116,7 @@ export default function Page() {
 								<div className="flex flex-col xl:flex-row">
 									<p className="flex my-5 text-xs uppercase md:hidden text-grey-light flex-inline">Available Pool</p>
 									<div className="hidden xl:block">
-										<img alt="Ape Coin" src="/apecoin-pool-image.png" className="min-w-[172px] min-h-[172px] w-[172px] h-[172px]" height="172" width="172" />
+										<Image alt="Ape Coin" src="/apecoin-pool-image.png" className="min-w-[172px] min-h-[172px] w-[172px] h-[172px]" height="172" width="172" />
 									</div>
 									<div className="flex flex-col justify-center xl:px-5">
 										<div className="my-auto">
@@ -126,7 +128,7 @@ export default function Page() {
 										</div>
 									</div>
 									<div className="block xl:hidden">
-										<img alt="Ape Coin" src="/apecoin-pool-image.png" className="min-w-[172px] min-h-[172px] w-[172px] h-[172px]" height="172" width="172" />
+										<Image alt="Ape Coin" src="/apecoin-pool-image.png" className="min-w-[172px] min-h-[172px] w-[172px] h-[172px]" height="172" width="172" />
 									</div>
 								</div>
 							</div>
