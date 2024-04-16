@@ -2,10 +2,16 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 
 export default function Page() {
 	const [isConnected, setIsConnected] = useState(false);
-	const [activeTab, setActiveTab] = useState("apecoin");
+	const [activeTab, setActiveTab] = useState("kanoi");
+	const [show, setShow] = useState(false);
+	const [stakeActiveTab, setStakeActiveTab] = useState([{ coin: "", duration: "" }]);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	return (
 		<div className="flex-grow dashboard-bg pb-[100px] overflow-y-auto">
 			{!isConnected && (
@@ -17,7 +23,7 @@ export default function Page() {
 							<div>
 								<button
 									onClick={() => setIsConnected(true)}
-									className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#0043e5] text-white border-white-200 hover:bg-[#0043e5] focus:bg-[#0043e5] hover:border-[#0043e5] hover:border-[#0043e5] disabled:bg-grey"
+									className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] hover:border-[#e8833a] disabled:bg-grey"
 									type="button">
 									connect wallet
 								</button>
@@ -59,7 +65,7 @@ export default function Page() {
 														</button>
 													</div>
 												</div>
-												<div className="flex mt-3 text-2xl font-bold uppercase text-bold">0 $APE</div>
+												<div className="flex mt-3 text-2xl font-bold uppercase text-bold">0 $KANOI</div>
 												<div className="flex text-sm text-gray-400">
 													<p className="text-grey-light">$0.00</p>
 												</div>
@@ -83,7 +89,7 @@ export default function Page() {
 														</button>
 													</div>
 												</div>
-												<div className="flex mt-3 text-2xl font-bold uppercase text-bold">0 $APE</div>
+												<div className="flex mt-3 text-2xl font-bold uppercase text-bold">0 $SEISEN</div>
 												<div className="flex text-sm text-gray-400">
 													<p className="text-grey-light">$0.00</p>
 												</div>
@@ -102,48 +108,24 @@ export default function Page() {
 									<div className="md:pl-1 md:pr-1 pl-0 pr-2">
 										<div>
 											<button
-												onClick={() => setActiveTab("apecoin")}
-												class={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
-													activeTab === "apecoin" ? "bg-blue-100 text-[#0043e5]" : "bg-white text-slate-500"
+												onClick={() => setActiveTab("kanoi")}
+												className={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
+													activeTab === "kanoi" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
 												}`}
 												aria-current="page">
-												Apecoin
+												KANOI
 											</button>
 										</div>
 									</div>
 									<div className="md:pl-1 md:pr-1 pl-0 pr-2">
 										<div>
 											<button
-												onClick={() => setActiveTab("bayc")}
-												class={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
-													activeTab === "bayc" ? "bg-blue-100 text-[#0043e5]" : "bg-white text-slate-500"
+												onClick={() => setActiveTab("seisen")}
+												className={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
+													activeTab === "seisen" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
 												}`}
 												aria-current="page">
-												BAYC
-											</button>
-										</div>
-									</div>
-									<div className="md:pl-1 md:pr-1 pl-0 pr-2">
-										<div>
-											<button
-												onClick={() => setActiveTab("mayc")}
-												class={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
-													activeTab === "mayc" ? "bg-blue-100 text-[#0043e5]" : "bg-white text-slate-500"
-												}`}
-												aria-current="page">
-												MAYC
-											</button>
-										</div>
-									</div>
-									<div className="md:pl-1 md:pr-1 pl-0 pr-2">
-										<div>
-											<button
-												onClick={() => setActiveTab("paired")}
-												class={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
-													activeTab === "paired" ? "bg-blue-100 text-[#0043e5]" : "bg-white text-slate-500"
-												}`}
-												aria-current="page">
-												Paired
+												SEISEN
 											</button>
 										</div>
 									</div>
@@ -223,7 +205,7 @@ export default function Page() {
 								<div className="md:w-3/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
 									<div className="flex flex-col items-start xl:flex-row xl:items-center">
 										<p className="text-xs uppercase md:hidden text-grey-light">asset</p>
-										<div className="font-bold text-black uppercase text-xl xl:ml-3 xl:order-2">APE</div>
+										<div className="font-bold text-black uppercase text-xl xl:ml-3 xl:order-2">KANOI</div>
 										<span
 											className="lazy-load-image-background lazy-load-image-loaded"
 											style={{
@@ -237,13 +219,12 @@ export default function Page() {
 									</div>
 								</div>
 								<div className="md:w-1/2 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
-									<div className="text-grey-light">Stake some $APE to start earning rewards.</div>
+									<div className="text-grey-light">Stake some $KANOI to start earning rewards.</div>
 								</div>
 								<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end">
 									<button
-										data-bs-toggle="modal"
-										data-bs-target="#exampleModal"
-										className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#0043e5] text-white border-white-200 hover:bg-[#0043e5] focus:bg-[#0043e5] hover:border-[#0043e5] hover:border-[#0043e5] disabled:bg-grey w-full md:w-[150px]"
+										onClick={handleShow}
+										className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] disabled:bg-grey w-full md:w-[150px]"
 										type="button">
 										<span className="flex items-center justify-center">
 											<p className="mb-0">Stake</p>
@@ -257,27 +238,135 @@ export default function Page() {
 			)}
 
 			{/* Modal  */}
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="exampleModalLabel">
-								Modal title
-							</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<Modal show={show} onHide={handleClose} size={"lg"} centered animation={true}>
+				<Modal.Header className="border-0" closeButton>
+					<Modal.Title></Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<h4 className="text-center text-black font-bold">Stake</h4>
+
+					<div className="flex items-center justify-between mb-4">
+						<div className="flex items-center gap-1">
+							<div className="pool-img rounded-full">
+								<Image src="/apecoin-pool-image.png" className="rounded-full" alt="NFT Asset" height="35" width="35" />
+							</div>
+							<div className="text-slate-700 font-medium">ILV Pool</div>
 						</div>
-						<div class="modal-body">...</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-								Close
-							</button>
-							<button type="button" class="btn btn-primary">
-								Save changes
-							</button>
+						<div className="text-slate-500 font-normal">EST. APL-</div>
+					</div>
+
+					<div className="flex flex-row justify-start mb-4">
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, coin: "kanoi" }))}
+									className={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
+										stakeActiveTab.coin === "kanoi" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									KANOI
+								</button>
+							</div>
+						</div>
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, coin: "seisen" }))}
+									className={`py-2 px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-sm h-[36px] max-h-[36px] border ${
+										stakeActiveTab.coin === "seisen" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									SEISEN
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+
+					<div className="flex items-center justify-between mb-2">
+						<div className="">Amount</div>
+						<div className="flex items-center gap-1">
+							<div className="font-bold text-black">Balance</div>
+							<div className="font-normal text-slate-600">0.00 ILV</div>
+						</div>
+					</div>
+
+					<div className="stake-amount mb-4">
+						<input type="number" className="w-full border-2 border-grey-200 rounded-md p-2" placeholder="Enter amount" />
+					</div>
+
+					<div className="text-black font-normal mb-2">Duration</div>
+
+					<div className="flex flex-row justify-start mb-4">
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, duration: "oneMonth" }))}
+									className={`py-2  px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-xs h-[36px] max-h-[36px] border ${
+										stakeActiveTab.duration === "oneMonth" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									1 Month
+								</button>
+							</div>
+						</div>
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, duration: "threeMonth" }))}
+									className={`py-2  px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-xs h-[36px] max-h-[36px] border ${
+										stakeActiveTab.duration === "threeMonth" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									3 Month
+								</button>
+							</div>
+						</div>
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, duration: "sixMonth" }))}
+									className={`py-2  px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-xs h-[36px] max-h-[36px] border ${
+										stakeActiveTab.duration === "sixMonth" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									6 Month
+								</button>
+							</div>
+						</div>
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, duration: "sevenMonth" }))}
+									className={`py-2  px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-xs h-[36px] max-h-[36px] border ${
+										stakeActiveTab.duration === "sevenMonth" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									12 Month
+								</button>
+							</div>
+						</div>
+						<div className="md:pl-1 md:pr-1 pl-0 pr-2">
+							<div>
+								<button
+									onClick={() => setStakeActiveTab((prev) => ({ ...prev, duration: "custom" }))}
+									className={`py-2  px-4 border-grey-light font-bold uppercase rounded-lg rounded-tab text-xs h-[36px] max-h-[36px] border ${
+										stakeActiveTab.duration === "custom" ? "bg-blue-100 text-[#e8833a]" : "bg-white text-slate-500"
+									}`}
+									aria-current="page">
+									Custom
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<button
+						onClick={handleClose}
+						className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a]  disabled:bg-grey w-full"
+						type="button">
+						Stake
+					</button>
+				</Modal.Body>
+			</Modal>
 		</div>
 	);
 }

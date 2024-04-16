@@ -16,9 +16,19 @@
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
 	border: 0;
-	color: #0043e5 !important;
+	color: #e8833a !important;
 	background-color: rgba(0, 67, 229, 0.1) !important;
 	border-radius: 8px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+	color: #e8833a !important;
+}
+
+.btn-primary {
+	background-color: #e8833a !important;
+	border-color: #e8833a !important;
 }
 
 /* banner */
