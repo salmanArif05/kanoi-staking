@@ -9,17 +9,16 @@ import Custom from "@/components/ui/custom";
 import { useAccount } from "wagmi";
 
 export default function Page() {
-	const [isConnected, setIsConnected] = useState(false);
 	const [activeTab, setActiveTab] = useState("kanoi");
 	const [show, setShow] = useState(false);
 	const [stakeActiveTab, setStakeActiveTab] = useState([{ coin: "", duration: "" }]);
 	const [stakeIsCollapse, setStakeIsCollapse] = useState(false);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
-	const { address, isDisconnected } = useAccount();
+	const { address, isConnected } = useAccount();
 	return (
 		<div className="flex-grow dashboard-bg pb-[100px] overflow-y-auto">
-			{!address && isDisconnected && (
+			{!isConnected && (
 				<main>
 					<div className="container py-5">
 						<div className="flex flex-col px-5 py-5 mt-5 text-center text-black border rounded">
@@ -39,7 +38,7 @@ export default function Page() {
 					</div>
 				</main>
 			)}
-			{address && !isDisconnected && (
+			{address && isConnected && (
 				<>
 					<div className="container py-5">
 						<div className="hidden md:block">
