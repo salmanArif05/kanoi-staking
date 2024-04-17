@@ -100,7 +100,7 @@ export default function Page() {
 								</div>
 							</div>
 						</div>
-						<div className="flex  flex-col justify-start my-6 md:flex-row md:items-center">
+						<div className="flex flex-col justify-start my-6 md:flex-row md:items-center">
 							<div className="w-auto">
 								<h1 className="mt-1 md:mr-3 py-3 md:py-0 text-2xl font-bold uppercase text-grey-dark">Pools:</h1>
 							</div>
@@ -133,12 +133,21 @@ export default function Page() {
 								</div>
 							</div>
 							<div className="w-auto"></div>
-							<div className="w-auto"></div>
+							<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end">
+								<button
+									onClick={handleShow}
+									className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] disabled:bg-grey w-full md:w-[150px]"
+									type="button">
+									<span className="flex items-center justify-center">
+										<p className="mb-0">Stake</p>
+									</span>
+								</button>
+							</div>
 						</div>
 						<div className="hidden md:block">
 							<div className="px-4">
 								<div className="flex flex-row flex-wrap md:flex-nowrap items-start md:items-center ">
-									<div className="md:w-3/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
+									<div className="md:w-2/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
 										<div className="flex pb-2 text-xs uppercase text-grey-light">
 											<p>Asset</p>
 										</div>
@@ -147,7 +156,7 @@ export default function Page() {
 										<div className="flex pb-2 text-xs uppercase text-grey-light">
 											<p>Rewards 24H</p>
 											<div className="relative">
-												<button className="px-1" id="headlessui-popover-button-:r242:" type="button" aria-expanded="false">
+												<button className="px-1" type="button">
 													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path
 															d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
@@ -161,11 +170,29 @@ export default function Page() {
 											</div>
 										</div>
 									</div>
-									<div className="md:w-2/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="md:w-1/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0">
 										<div className="flex pb-2 text-xs uppercase text-grey-light">
 											<p>Unclaimed</p>
 											<div className="relative">
-												<button className="px-1" id="headlessui-popover-button-:r245:" type="button" aria-expanded="false">
+												<button className="px-1" type="button">
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+															stroke="#F6688C"
+															stroke-linecap="round"
+															stroke-linejoin="round"></path>
+														<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div className="md:w-1/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0">
+										<div className="flex pb-2 text-xs uppercase text-grey-light">
+											<p>Deposited</p>
+											<div className="relative">
+												<button className="px-1" type="button">
 													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path
 															d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
@@ -181,9 +208,9 @@ export default function Page() {
 									</div>
 									<div className="md:w-2/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0">
 										<div className="flex pb-2 text-xs uppercase text-grey-light">
-											<p>Deposited</p>
+											<p>Date Staked</p>
 											<div className="relative">
-												<button className="px-1" id="headlessui-popover-button-:r248:" type="button" aria-expanded="false">
+												<button className="px-1" type="button">
 													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path
 															d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
@@ -197,13 +224,31 @@ export default function Page() {
 											</div>
 										</div>
 									</div>
-									<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end"></div>
+									<div className="md:w-2/12 basis-[50%] md:basis-[auto] mb-6 md:mb-0">
+										<div className="flex pb-2 text-xs uppercase text-grey-light">
+											<p>Unlocks In</p>
+											<div className="relative">
+												<button className="px-1" type="button">
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+															stroke="#F6688C"
+															stroke-linecap="round"
+															stroke-linejoin="round"></path>
+														<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div className="md:w-2/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end"></div>
 								</div>
 							</div>
 						</div>
 						<div className="p-4 mb-4 bg-white border rounded border-grey-200">
 							<div className="flex flex-row flex-wrap !md:flex-nowrap items-start md:items-center">
-								<div className="md:w-3/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
+								<div className="md:w-2/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0 xl:mr-4">
 									<div className="flex flex-col items-start xl:flex-row xl:items-center">
 										<p className="text-xs uppercase md:hidden text-grey-light">asset</p>
 										<div className="font-bold text-black uppercase text-xl xl:ml-3 xl:order-2">KANOI</div>
@@ -212,23 +257,39 @@ export default function Page() {
 											style={{
 												color: "transparent",
 												display: "inline-block",
-												height: "147px",
-												width: "147px",
+												height: "120px",
+												width: "120px",
 											}}>
-											<Image src="/apecoin-pool-image.png" className="h-[147px] w-[147px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="147" width="147" />
+											<Image src="/apecoin-pool-image.png" className="h-[120px] w-[120px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="120" width="120" />
 										</span>
 									</div>
 								</div>
-								<div className="md:w-3/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
-									<div className="text-grey-light">Stake some $KANOI to start earning rewards.</div>
+								<div className="md:w-2/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="text-black text-sm font-bold">0.5 Kanoi</div>
+									<div className="text-slate-700 font-medium">$0.42</div>
 								</div>
-								<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end">
+								<div className="md:w-1/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="text-black text-sm font-bold">2.2 Kanoi</div>
+									<div className="text-slate-700 font-medium">$23.99</div>
+								</div>
+								<div className="md:w-1/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="text-black text-sm font-bold">129 Kanoi</div>
+									<div className="text-slate-700 font-medium">$215.99</div>
+								</div>
+								<div className="md:w-2/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="text-slate-700">Feb 10, 2022</div>
+								</div>
+								<div className="md:w-2/12 basis-[100%] md:basis-[auto] mb-6 md:mb-0">
+									<div className="text-slate-700">in 326 days</div>
+								</div>
+								<div className="md:w-1/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end">
 									<button
 										onClick={handleShow}
 										className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] disabled:bg-grey w-full md:w-[150px]"
 										type="button">
-										<span className="flex items-center justify-center">
-											<p className="mb-0">Stake</p>
+										<span className="flex items-center justify-center gap-2">
+											<iconify-icon icon="ic:baseline-lock" width="14" height="14"></iconify-icon>
+											<div>Locked</div>
 										</span>
 									</button>
 								</div>
@@ -245,10 +306,10 @@ export default function Page() {
 											style={{
 												color: "transparent",
 												display: "inline-block",
-												height: "147px",
-												width: "147px",
+												height: "120px",
+												width: "120px",
 											}}>
-											<Image src="/apecoin-pool-image.png" className="h-[147px] w-[147px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="147" width="147" />
+											<Image src="/apecoin-pool-image.png" className="h-[120px] w-[120px] max-w-none xl:order-1 rounded-lg" alt="NFT Asset" height="120" width="120" />
 										</span>
 									</div>
 								</div>
