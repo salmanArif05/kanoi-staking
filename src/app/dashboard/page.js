@@ -133,7 +133,7 @@ export default function Page() {
 								</div>
 							</div>
 							<div className="w-auto"></div>
-							<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end">
+							<div className="md:w-3/12 basis-[100%] md:basis-[auto] md:flex md:flex-row md:justify-end !md:mt-0 mt-4">
 								<button
 									onClick={handleShow}
 									className="rounded border-2 uppercase px-5 py-2.5 mb-2 text-center font-bold text-xs disabled:cursor-not-allowed transition-colors bg-[#e8833a] text-white border-white-200 hover:bg-[#e8833a] focus:bg-[#e8833a] hover:border-[#e8833a] disabled:bg-grey w-full md:w-[150px]"
