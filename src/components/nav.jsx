@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import ConnectButton from "./ui/walletConnect";
 
 const Navbar = () => {
 	const currentPath = usePathname();
@@ -44,7 +45,7 @@ const Navbar = () => {
 						)}
 						{/* tabs */}
 						{dashboardAllowedPaths.includes(currentPath) ? (
-							<button className="btn btn-primary !bg-[#e8833a] font-bold !px-10 py-2">Connect Wallet</button>
+							<ConnectButton />
 						) : (
 							<Link href={"/dashboard"} className="btn btn-primary text-uppercase font-bold !bg-[#e8833a] !px-10 py-2">
 								Launch App

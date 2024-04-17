@@ -33,10 +33,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -51,10 +51,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -69,10 +69,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -87,10 +87,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -380,10 +380,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -402,10 +402,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -426,10 +426,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>
@@ -445,10 +445,10 @@ export default function Page() {
 												<path
 													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
 													stroke="#F6688C"
-													stroke-linecap="round"
-													stroke-linejoin="round"></path>
-												<path d="M8 7.33398V10.6673" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" stroke-linecap="round" stroke-linejoin="round"></path>
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+												<path d="M8 7.33398V10.6673" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
+												<path d="M7.9668 5.33398H8.03346V5.40065H7.9668V5.33398Z" stroke="#F6688C" strokeLinecap="round" strokeLinejoin="round"></path>
 											</svg>
 										</button>
 									</div>

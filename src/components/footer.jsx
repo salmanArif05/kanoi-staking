@@ -51,7 +51,7 @@ const Footer = () => {
 									<p className="mx-2 text-white text-[12px] mb-0">0x5954...Fbb9</p>
 									<div>
 										<svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path fill="none" stroke="#fff" stroke-width="2" d="M19,13 L19,23 L1,23 L1,5 L1,5 L11,5 M14,1 L23,1 L23,10 M10,14 L22.9999998,1 L10,14 Z"></path>
+											<path fill="none" stroke="#fff" strokeWidth="2" d="M19,13 L19,23 L1,23 L1,5 L1,5 L11,5 M14,1 L23,1 L23,10 M10,14 L22.9999998,1 L10,14 Z"></path>
 										</svg>
 									</div>
 								</a>
